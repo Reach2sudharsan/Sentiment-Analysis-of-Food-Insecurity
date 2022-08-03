@@ -1,19 +1,12 @@
-#İmport Libraries
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.feature_extraction.text import CountVectorizer
-import seaborn as sns 
-
 import re
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.probability import FreqDist
 from wordcloud import WordCloud
-from sklearn.metrics import classification_report,confusion_matrix,roc_curve,auc
 from keras.preprocessing.text import Tokenizer
 from keras_preprocessing.sequence import pad_sequences
 

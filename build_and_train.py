@@ -1,49 +1,14 @@
 from keras.layers import LSTM, Dense, Embedding, Dropout, Bidirectional, GlobalMaxPooling1D
-from keras.models import Sequential, load_model
+from keras.models import Sequential
 from keras.callbacks import EarlyStopping, ModelCheckpoint
-from keras.optimizers import adam_v2
-import tensorflow as tf 
-import numpy as np
 import matplotlib.pyplot as plt
-import librosa
 from spacy.lang.en.stop_words import STOP_WORDS
-
 import nltk
+
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize, word_tokenize
 import warnings
 warnings.filterwarnings(action = 'ignore')
-import gensim
-from gensim.models import Word2Vec
- 
-def word2vec(file_path, model_name, word1, word2):
-    #  Reads text file
-    sample = open(file_path)
-    s = sample.read()
-    # Replaces escape character with space
-    f = s.replace("\n", " ")
-    data = []
-    # iterate through each sentence in the file
-    for i in sent_tokenize(f):
-        temp = [] 
-        # tokenize the sentence into words
-        for j in word_tokenize(i):
-            temp.append(j.lower())
-        data.append(temp)
-    try:
-        model_name == "CBOW" or model_name == "Skip Gram"
-        if model_name == "CBOW":
-            model = Word2Vec(data, min_count = 1, vector_size = 100, window = 5)
-            sim = model.wv.similarity(word1, word2)
-            output = "Cosine similarity between {} " + "and {} - CBOW : ".format(word1, word2) + str(sim)
-            return output
-        elif model_name =="Skip Gram":
-            model = Word2Vec(data, min_count = 1, vector_size = 100, window = 5, sg = 1)
-            sim = model.wv.similarity(word1, word2)
-            output = "Cosine similarity between {} " + "and {} - CBOW : ".format(word1, word2) + str(sim)
-            return output
-    except:
-        return ValueError("Model used not available. Available models are 'CBOW' or 'Skip Gram'.")
 
 def build_BiLSTM(size_of_vocabulary):
     model = Sequential()
