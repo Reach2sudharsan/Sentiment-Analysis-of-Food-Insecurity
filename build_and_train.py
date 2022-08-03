@@ -45,7 +45,7 @@ def word2vec(file_path, model_name, word1, word2):
     except:
         return ValueError("Model used not available. Available models are 'CBOW' or 'Skip Gram'.")
 
-def build_BiLSTM(input_dim, size_of_vocabulary):
+def build_BiLSTM(size_of_vocabulary):
     model = Sequential()
     #embedding layer
     model.add(Embedding(size_of_vocabulary,128,input_length=120))
