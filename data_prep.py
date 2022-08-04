@@ -15,9 +15,9 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 def retrieve_data():
-    train = pd.read_csv('data/Train.csv')
-    valid = pd.read_csv('data/Valid.csv')
-    test = pd.read_csv('data/Test.csv')
+    train = pd.read_csv('training_data/Train.csv')
+    valid = pd.read_csv('training_data/Valid.csv')
+    test = pd.read_csv('training_data/Test.csv')
     train.info()
     valid.info()
     test.info()
