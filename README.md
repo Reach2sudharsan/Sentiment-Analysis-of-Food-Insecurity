@@ -3,6 +3,9 @@
 
 </p>
 <p align="left">
+<a href="https://www.tweepy.org/">
+    <img src="https://img.shields.io/badge/powered%20by-tweepy-blue" alt="Test Status">
+</a>
 <a href="https://github.com/keras-team/keras">
     <img src="https://img.shields.io/badge/powered%20by-keras-brightgreen" alt="Test Status">
 </a>
