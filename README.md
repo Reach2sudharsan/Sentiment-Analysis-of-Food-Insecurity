@@ -25,7 +25,7 @@ A lot of food insecurity exists around the world in the form of food deserts, pl
 
 ## Methods
 
-## Data Collection
+### Data Collection
 I mined 490 tweets from Twitter using the Python <a href="https://www.tweepy.org/">Twitter API</a> called tweepy, which I classifed the sentiment of (positive or negative). I used Deep Learning for this research, so I would need a lot of training data for the model that I used. I chose to use 50000 IMDb movie reviews as my training data.
 
 ### BiLSTM
