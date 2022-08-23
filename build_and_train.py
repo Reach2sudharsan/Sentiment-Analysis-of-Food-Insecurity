@@ -53,7 +53,7 @@ def plot_training(h):
 def get_accuracy_and_loss(model, X_test, y_test):
     loss,acc = model.evaluate(X_test,y_test)
     print('Test Accuracy: {}%'.format(acc*100)) 
-    print('Test Loss: {}%'.format(loss))
+    print('Test Loss: {}'.format(loss))
     return acc, loss
 
 # sim = word2vec('SentiNet/models/data.txt',"Skip Gram", "neural", "net")
