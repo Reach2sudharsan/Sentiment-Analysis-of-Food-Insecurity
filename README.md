@@ -34,7 +34,7 @@ I mined 490 tweets from Twitter using the Python <a href="https://www.tweepy.org
 ### BiLSTM
 I used a BiLSTM (Bidirectional Long Short Term Memory) model in order to classify the sentiment. The model's architecture is displayed in the below diagrams. Through research, unlike the standard LSTM approach, a BiLSTM model involves its inputs flowing in both directions and is thus capable of using information from both of its sides.
 ###
-<img src="BiLSTM_model.png" width=500, height=400>
+<img src="figures/model_pics/BiLSTM_model.png" width=500, height=400>
 
 ###
 I trained this model with the IMDb data and tested it with the Twitter data.
