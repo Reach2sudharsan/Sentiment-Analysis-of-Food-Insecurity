@@ -1,7 +1,7 @@
 # **Sentiment Analysis of Food Insecurity**
 ### ***Using:*** 
  - ### *Transfer Learning: IMDb movie reviews (training data) --> Food Insecurity tweets (testing data)*
-- ### Deep Learning: BiLSTM (Bidirectional Long Short Term Memory) Model*
+- ### *Deep Learning: BiLSTM (Bidirectional Long Short Term Memory) Model*
 ### **Author:** Sudharsan Gopalakrishnan
 
 </p>
