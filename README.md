@@ -1,5 +1,7 @@
 # **Sentiment Analysis of Food Insecurity**
-### ***Using a Deep Learning Approach: BiLSTM (Bidirectional Long Short Term Memory) Model***
+### ***Using:*** 
+ - ### *Transfer Learning: IMDb movie reviews (training data) --> Food Insecurity tweets (testing data)*
+- ### Deep Learning: BiLSTM (Bidirectional Long Short Term Memory) Model*
 ### **Author:** Sudharsan Gopalakrishnan
 
 </p>
@@ -30,7 +32,7 @@
 ## Methods
 
 ### Data Collection
-I mined 490 tweets from Twitter using the Python <a href="https://www.tweepy.org/">Twitter API</a> called tweepy, which I classifed the sentiment of (positive or negative). I used Deep Learning for this research, so I would need a lot of training data for the model that I used. I chose to use 50000 IMDb movie reviews as my training data.
+I mined 1558 tweets from Twitter using the Python <a href="https://www.tweepy.org/">Twitter API</a> called tweepy, which I classifed the sentiment of (positive or negative). I used Deep Learning for this research, so I would need a lot of training data for the model that I used. I chose to use 50000 IMDb movie reviews as my training data.
 
 ### BiLSTM
 I used a BiLSTM (Bidirectional Long Short Term Memory) model in order to classify the sentiment. The model's architecture is displayed in the below diagrams. Through research, unlike the standard LSTM approach, a BiLSTM model involves its inputs flowing in both directions and is thus capable of using information from both of its sides.
@@ -38,7 +40,7 @@ I used a BiLSTM (Bidirectional Long Short Term Memory) model in order to classif
 <img src="figures/model_pics/BiLSTM_model.png" width=500, height=400>
 
 ###
-I trained this model with the IMDb data and tested it with the Food Insecurity Twitter data.
+Using transfer learning, I trained this model with the IMDb data and tested it with the Food Insecurity Twitter data.
 
 ## Full Published Paper link
 
