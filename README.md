@@ -40,3 +40,7 @@ I used a BiLSTM (Bidirectional Long Short Term Memory) model in order to classif
 ###
 Using transfer learning, I trained this model with the IMDb data and tested it with the Food Insecurity Twitter data.
 
+## Link to Research Paper
+https://jsr.org/preprints/scholarlaunch/preprint/view/171
+
+
